@@ -2,6 +2,7 @@ package com.sunda.merchants.security;
 
 import com.sunda.merchants.constant.Constants;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Created by 老蹄子 on 2018/8/15 下午8:54
  */
+@Component
 public class AuthCheckInterceptor implements HandlerInterceptor {
 
     @Override
