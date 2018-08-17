@@ -877,3 +877,9 @@ java.lang.Exception: Header 中缺少 token!
 2018-08-16 16:03:24.989  INFO 7774 --- [http-nio-9527-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.0.1
 2018-08-16 16:03:24.989  INFO 7774 --- [http-nio-9527-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : a7a17cdec9eaa6c5
 2018-08-16 16:03:25.124  INFO 7774 --- [http-nio-9527-exec-7] c.s.m.service.impl.MerchantsServiceImpl  : DropPassTemplates: {"background":2,"desc":"laotizi123","end":1535270511907,"hasToken":false,"id":18,"limit":100002,"start":1533542511905,"summary":"laotizai","title":"laotizia"}
+2018-08-17 09:30:44.281  INFO 7774 --- [Thread-33] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@192d43ce: startup date [Thu Aug 16 15:53:11 CST 2018]; root of context hierarchy
+2018-08-17 09:30:44.324  INFO 7774 --- [Thread-33] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-08-17 09:30:44.326  INFO 7774 --- [Thread-33] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-08-17 09:30:44.334  INFO 7774 --- [Thread-33] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-17 09:30:44.335  INFO 7774 --- [Thread-33] o.a.k.clients.producer.KafkaProducer     : Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2018-08-17 09:30:44.347  INFO 7774 --- [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
