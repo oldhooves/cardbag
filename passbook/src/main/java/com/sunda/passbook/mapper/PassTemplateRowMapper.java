@@ -10,7 +10,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 /**
  * Created by 老蹄子 on 2018/8/17 下午3:36
  */
-public class PassTemplateRowMapper implements RowMapper {
+public class PassTemplateRowMapper implements RowMapper<PassTemplate> {
 
     private static byte[] FAMILY_B = Constants.PassTemplateTable.FAMILY_B.getBytes();
     private static byte[] ID = Constants.PassTemplateTable.ID.getBytes();
@@ -27,7 +27,7 @@ public class PassTemplateRowMapper implements RowMapper {
 
 
     @Override
-    public PassTemplate mapRow(Result result, int rowNum) throws Exception {
+    public PassTemplate mapRow(Result result, int i) throws Exception {
         PassTemplate passTemplate = new PassTemplate();
 
         passTemplate.setId(Bytes.toInt(result.getValue(FAMILY_B, ID)));

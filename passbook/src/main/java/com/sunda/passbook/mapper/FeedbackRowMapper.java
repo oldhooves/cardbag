@@ -9,7 +9,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 /**
  * Created by 老蹄子 on 2018/8/17 下午4:11
  */
-public class FeedbackRowMapper implements RowMapper {
+public class FeedbackRowMapper implements RowMapper<Feedback> {
 
     private static byte[] FAMILY_I = Constants.Feedback.FAMILY_I.getBytes();
     private static byte[] USER_ID = Constants.Feedback.USER_ID.getBytes();
