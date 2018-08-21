@@ -11,6 +11,7 @@ import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ import java.util.List;
 /**
  * Created by 老蹄子 on 2018/8/19 下午8:20
  */
+@Service
 public class UserServiceImpl implements IUserService {
 
     /** HBase 客户端 */
